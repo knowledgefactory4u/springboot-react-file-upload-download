@@ -41,7 +41,7 @@ public class UploadDownloadService {
 
 		List<String> list = new ArrayList<String>();
 		File files = new File(path);
-		String[] fileList = ((File) files).list();
+		String[] fileList = files.list();
 		for (String name : fileList) {
 			list.add(name);
 		}
